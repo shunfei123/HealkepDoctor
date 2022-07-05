@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.healkepdoctor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealkepDoctor"
+        tools:targetApi="31">
+        <activity
+            android:name=".View.diet.dietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.patientInfo.patientInfoDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.patientInfo.patientInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.self.selfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.doctormain.doctorMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.forget.forgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.register.registerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".View.login.loginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">HealkepDoctor</string>
+    <string name="account">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="please_read_rule">已阅读并同意服务器协议</string>
+    <string name="project_name">健康管理(医生端)</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="no_account">没有账号？</string>
+    <string name="register">注册</string>
+    <string name="back">上一步</string>
+    <string name="next">下一步</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password_repeat">请再输入一遍密码</string>
+    <string name="name">姓名</string>
+    <string name="age">年龄</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="sex">性别</string>
+    <string name="domain">专业领域：</string>
+    <string name="self_introduction">个人简介</string>
+    <string name="self_info">个人信息</string>
+    <string name="logout">退出登录</string>
+    <string name="preWeek">孕周</string>
+    <string name="weight">体重</string>
+    <string name="detail">详细>></string>
+    <string name="diet_current">当前饮食方案</string>
+    <string name="diet_history">历史饮食方案</string>
+    <string name="diet_future">饮食方案推荐</string>
+    <string name="accept">确认修改</string>
+    <string name="start_date">起始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="upload">上传</string>
+    <string name="save">保存</string>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.login.loginActivity">
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/project_name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/ll"
+        android:paddingTop="20dp"
+        android:id="@+id/layout_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        >
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="@string/account"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_below="@id/et_account"
+            android:layout_alignStart="@id/et_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="@color/red"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/layout_account"
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textAlignment="center"
+        >
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="@string/password" />
+        <TextView
+            android:text="123"
+            android:id="@+id/tv_password"
+            android:layout_below="@id/et_password"
+            android:layout_alignStart="@id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="@color/red"/>
+        <TextView
+            android:layout_below="@id/tv_password"
+            android:layout_alignEnd="@id/et_password"
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/urlblue"
+            android:text="@string/forget_password"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/layout_password"
+        android:id="@+id/layout_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        >
+
+        <CheckBox
+            android:id="@+id/ck_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/ck_rule"
+            android:gravity="center|left"
+            android:text="@string/please_read_rule"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_rule"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:id="@+id/layout_register"
+        android:layout_below="@id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_account"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/urlblue"
+            android:text="@string/register"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/layout_register"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"/>
+        </LinearLayout>
+</RelativeLayout>
